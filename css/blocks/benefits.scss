@@ -1,0 +1,64 @@
+.benefits {
+    display: flex;
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:before {
+        content: url("../img/decor/decor-why.svg");
+        position: absolute;
+        top: 30px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.benefit {
+    text-align: center;
+}
+
+.benefit__image-wrapper {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.benefit__icon {
+    width: 64px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.benefit__title {
+    font-size: 27px;
+    font-weight: 700;
+    color: #292929;
+    margin-bottom: 18px;
+}
+
+.benefit__desc {
+    font-weight: 300;
+    color: #666;
+}

@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 27px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
