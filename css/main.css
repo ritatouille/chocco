@@ -599,7 +599,8 @@ button {
 }
 
 .map-section {
-  background: url("../img/map/map.png") round;
+  background: url("../img/map/map.png") no-repeat;
+  background-size: 100%;
 }
 
 .footer-container__section {
