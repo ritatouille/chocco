@@ -2,20 +2,31 @@
     background: url("../img/decor/branch.png") right bottom no-repeat;
     background-color: $blue;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #fff;
     position: relative;
 
+    @include tablets {
+        background-position: right bottom 97%;
+        min-height: rem(1000px);
+    }
+
+    &:before, &:after {
+        @include tablets {
+            display: none;
+        }
+    }
+
     &:before {
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         left: 2%;
         content: url("../img/decor/leaf.png");
     }
 
     &:after {
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         content: url("../img/decor/comp.png");
         right: 0;
     }
@@ -26,22 +37,58 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 50px;
+    padding: rem(24px) 0 rem(50px);
     background: url("../img/decor/chocolates.png") right center / 50% auto no-repeat;
+
+    @include tablets {
+        background: none;
+    }
 }
 
 .hero__title-section {
     width: 40%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content: "";
+            width: rem(353px);
+            height: rem(367px);
+            background: url("../../img/decor/comp-tablets.png") center center / contain no-repeat;
+        }
+    }
 }
+
+.hero__icons-section {
+   @include tablets {
+        display: none;
+   }
+}
+
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
 }
 
 .hero__title-desc {
-    font-size: 21px;
-    margin-bottom: 32px;
+    font-size: rem(21px);
+    margin-bottom: rem(32px);
+
+    @include tablets {
+        padding: 0 23%;
+    }
+
+    @include phones {
+        padding: 0 15%;
+    }
 }

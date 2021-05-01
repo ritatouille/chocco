@@ -2,10 +2,22 @@
     position: relative;
     background: url("../img/decor/leaf-why.svg") left top 57% no-repeat;
 
+    @include tablets {
+        background-position: left top 7%;
+    }
+
+    @include phones {
+        background: none;
+    }
+
     &:before {
         content: url("../img/decor/raspberry.svg");
         position: absolute;
         bottom: -20%;
         left: 0;
+
+        @include phones {
+            display: none;
+        }
     }
 }

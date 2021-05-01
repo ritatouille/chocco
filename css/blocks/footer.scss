@@ -1,41 +1,73 @@
-.footer-container__section {
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(17px) 0;
+    background: #fff;
+
+    @include tablets {
+        padding: rem(27px) 0;
+    }
+}
+
+.footer__container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    height: 93px;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
-.footer__col {
-    display: flex;
-    align-items: center;
-}
-
-.footer__col--socials {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.contacts__address {
-    color: #292929;
-    font-size: 21px;
-    margin-bottom: 6px;
-}
-
-.contacts__phone-icon {
+.footer__contacts {
     display: inline-block;
-    margin-right: 7px;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include phones {
+        margin-bottom: rem(12px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.contacts__phone-number {
-    color: #497870;
+.footer__contacts-address {
+    margin-bottom: rem(6px);
+    color: #292929;
+    font-weight: 400;
     font-size: 21px;
-    text-decoration: none;
+}
+
+.footer__contacts-phone {
+
+    &-icon {
+        display: inline-block;
+        width: rem(12px);
+        height: rem(12px);
+        margin-right: rem(7px);
+    }
+
+    &-number {
+        text-decoration: none;
+        color: #497870;
+        font-weight: 400;
+        font-size: 21px;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .socials__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 14px;
+    margin-right: rem(14px);
 
     &:last-child {
         margin-right: 0;
@@ -45,8 +77,8 @@
 .socials__link {
     display: block;
     text-decoration: none;
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
 
     &--vk {
         background: url("../img/socials/vk.png") center center no-repeat;
