@@ -1,9 +1,16 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $blue: #61C4D9;
 $darkGreen: #365A49;
+
+@import "blocks/media.scss";
 
 //z-indexes
 $z-fixed-menu: 100;
@@ -18,6 +25,7 @@ $z-fixed-menu: 100;
 //blocks
 @import "blocks/hero";
 @import "blocks/header";
+@import "blocks/hamburger.scss";
 @import "blocks/features";
 @import "blocks/btn";
 @import "blocks/section";
@@ -32,3 +40,4 @@ $z-fixed-menu: 100;
 @import "blocks/menu.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
+@import "blocks/media.scss";
