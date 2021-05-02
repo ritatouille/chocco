@@ -159,7 +159,7 @@ button {
     content: "";
     width: 19.6111111111rem;
     height: 20.3888888889rem;
-    background: url("../../img/decor/comp-tablets.png") center center/contain no-repeat;
+    background: url("../img/decor/comp-tablets.png") center center/contain no-repeat;
   }
 }
 
