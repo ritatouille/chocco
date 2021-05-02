@@ -3,7 +3,7 @@
 }
 
 .features__item {
-    margin-right: rem(40px);
+    margin-right: rem(50px);
 
     &:last-child{
         margin-right: 0;
@@ -12,18 +12,20 @@
 
 .feature {
     display: flex;
-    max-width: rem(114px);
+    max-width: rem(120px);
 }
 
 .feature__icon {
-    margin-right: rem(12px);
+    margin-right: rem(13px);
 
-    &-img {
-        width: rem(37px);
-        height: rem(35px);
+    &-svg {
+        width: rem(40px);
+        height: rem(36px);
+        fill: #fff;
     }
 }
 
 .feature__text {
     font-size: rem(16px);
+    line-height: 1.3;
 }

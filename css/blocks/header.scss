@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+.logo {
+    width: rem(53px);
+    height: rem(38px);
+    fill: #fff;
+}
+
 .menu {
     margin: 0 30px;
 }
@@ -42,11 +48,12 @@
     align-items: center;
 }
 
-.phone-number__icon-elem {
+.phone-number__icon-phone {
     width: rem(14px);
     height: rem(14px);
-    margin-right: rem(16px);
+    margin-right: rem(7px);
     flex-shrink: 0;
+    fill: #fff;
 }
 
 .phone-number__text {

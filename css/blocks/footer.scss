@@ -44,10 +44,10 @@
 .footer__contacts-phone {
 
     &-icon {
-        display: inline-block;
         width: rem(12px);
         height: rem(12px);
         margin-right: rem(7px);
+        fill: #497870;
     }
 
     &-number {
@@ -74,29 +74,14 @@
     }
 }
 
-.socials__link {
+.socials__link-icon {
     display: block;
     text-decoration: none;
     width: rem(20px);
     height: rem(20px);
+    fill: #b3b3b3;
 
-    &--vk {
-        background: url("../img/socials/vk.png") center center no-repeat;
-    }
-
-    &--fb {
-        background: url("../img/socials/fb.png") center center no-repeat;
-
-        &:hover {
-            background: url("../img/socials/fb-hover.png") center center no-repeat;
-        }
-    }
-
-    &--in {
-        background: url("../img/socials/in.png") center center no-repeat;
-    }
-
-    &--tw {
-        background: url("../img/socials/tw.png") center center no-repeat;
+    &:hover {
+        fill: #292929;
     }
 }
