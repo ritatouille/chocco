@@ -329,6 +329,14 @@ button {
   background: #fff;
   color: #365A49;
 }
+.btn--slider {
+  background: #497870;
+  color: #fff;
+}
+.btn--slider:hover {
+  background: #365A49;
+  color: #fff;
+}
 .btn--transparent {
   background: transparent;
   font-weight: 400;
@@ -981,4 +989,99 @@ button {
 }
 .socials__link-icon:hover {
   fill: #292929;
+}
+
+.slider-section {
+  height: 100vh;
+  min-height: 35.5555555556rem;
+  background: #f8faf9;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 0.7777777778rem;
+  height: 1.5rem;
+}
+.arrow-right {
+  right: 0;
+}
+
+.arrow__icon {
+  stroke: #000;
+  stroke-width: 0.1111111111rem;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__image {
+  width: 25.5555555556rem;
+  height: 24.1111111111rem;
+}
+
+.slider__text {
+  width: 20.5555555556rem;
+}
+
+.slider__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #292929;
+  text-transform: uppercase;
+  margin-bottom: 1.2777777778rem;
+}
+
+.slider__text {
+  margin-bottom: 1.3333333333rem;
+}
+
+.slider__list {
+  display: flex;
+}
+
+.slider__item {
+  margin-right: 2.4444444444rem;
+  margin-bottom: 1.3333333333rem;
+}
+.slider__item:last-child {
+  margin-right: 0;
+}
+
+.slider__item-title {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.slider__item-desc {
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.slider__order {
+  display: flex;
+}
+
+.slider__order-price {
+  color: #151515;
+  font-size: 3.3333333333rem;
+  font-weight: 300;
+  margin-right: 1.6666666667rem;
+}
+
+.slider__order-btn {
+  display: flex;
+  align-items: center;
 }
