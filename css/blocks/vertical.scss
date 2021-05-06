@@ -1,0 +1,52 @@
+.vert-menu {
+    display: none;
+}
+
+.vert-menu--open {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(51, 53, 55, 1);
+    z-index: 20;
+
+    .vert-menu__list {
+        flex-direction: column;
+        margin-top: rem(135px);
+    }
+
+    .vert-menu__item {
+        margin-bottom: rem(30px);
+
+        @include phones {
+            margin-bottom: rem(36px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    .vert-menu__link {
+        text-decoration: none;
+        font-size: rem(36px);
+    }
+}
+
+.vert-menu__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vert-menu__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: rem(36px);
+}

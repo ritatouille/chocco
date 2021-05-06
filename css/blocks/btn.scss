@@ -28,6 +28,15 @@
         }
     }
 
+    &--slider {
+        background: #497870;
+        color: #fff;
+
+        &:hover {
+            background: $darkGreen;
+            color: #fff;
+        }
+    }
     &--transparent {
         background: transparent;
         font-weight: 400;
