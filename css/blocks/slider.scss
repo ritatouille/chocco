@@ -39,6 +39,10 @@
     &-right {
         right: 0;
     }
+
+    @include tablets {
+        top: 25%;
+    }
 }
 
 .arrow__icon {
