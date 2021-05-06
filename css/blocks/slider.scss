@@ -36,13 +36,15 @@
     width: rem(14px);
     height: rem(27px);
 
+    @include tablets {
+        top: 25%;
+    }
+    
     &-right {
         right: 0;
     }
 
-    @include tablets {
-        top: 25%;
-    }
+    
 }
 
 .arrow__icon {
