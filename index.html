@@ -51,11 +51,13 @@
                             </span>
                             <span class="phone-number__text">8 800 903 90 90</span>
                         </a>
-                        <a href="" class="hamburger">
-                            <span class="hamburger__plank"></span>
-                            <span class="hamburger__plank"></span>
-                            <span class="hamburger__plank"></span>
-                        </a>
+                        <div class="hamburger">
+                            <a href="#" class="hamburger__link">
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                            </a>
+                        </div>
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
@@ -164,13 +166,71 @@
                         <div class="slider__content">
                             <img src="./img/slider/chocolates.png" alt="chocolates" class="slider__image">
                             <div class="slider__textcontent">
-                                <div class="slider__composition">
-                                    <div class="slider__composition-menu">
-                                        <svg class="click">
-                                            <use xlink:href="./sprite.svg#click"></use>
-                                        </svg>
-                                    </div>
+                                <div class="composition">
+                                    <a href="#" class="composition__btn">
+                                        <div class="composition__btn-icon">
+                                                <svg class="composition__btn-icon-click">
+                                                    <use xlink:href="./sprite.svg#click"></use>
+                                                </svg>
+                                        </div>
+                                    </a>
                                 </div>
+                                <ul class="composition__dropdown">
+                                    <li class="composition__dropdown-item">
+                                        <div class="composition__dropdown-icon">
+                                            <svg class="dropdown__icon">
+                                                <use xlink:href="./sprite.svg#grape"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="composition__dropdown-text">Виноград</div>
+                                        <div class="composition__dropdown-weight">25 г</div>
+                                    </li>
+                                    <li class="composition__dropdown-item">
+                                        <div class="composition__dropdown-icon">
+                                            <svg class="dropdown__icon">
+                                                <use xlink:href="./sprite.svg#nut"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="composition__dropdown-text">Грецкий орех</div>
+                                        <div class="composition__dropdown-weight">32 г</div>
+                                    </li>
+                                    <li class="composition__dropdown-item">
+                                        <div class="composition__dropdown-icon">
+                                            <svg class="dropdown__icon">
+                                                <use xlink:href="./sprite.svg#almond"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="composition__dropdown-text">Кунжутное семя</div>
+                                        <div class="composition__dropdown-weight">20 г</div>
+                                    </li>
+                                    <li class="composition__dropdown-item">
+                                        <div class="composition__dropdown-icon">
+                                            <svg class="dropdown__icon">
+                                                <use xlink:href="./sprite.svg#milk"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="composition__dropdown-text">Сухое молоко</div>
+                                        <div class="composition__dropdown-weight">10 г</div>
+                                    </li>
+                                    <li class="composition__dropdown-item">
+                                        <div class="composition__dropdown-icon">
+                                            <svg class="dropdown__icon">
+                                                <use xlink:href="./sprite.svg#bee"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="composition__dropdown-text">Зам.сахара</div>
+                                        <div class="composition__dropdown-weight">4 г</div>
+                                    </li>
+                                    <li class="composition__dropdown-item">
+                                        <div class="composition__dropdown-icon">
+                                            <svg class="dropdown__icon">
+                                                <use xlink:href="./sprite.svg#cacao"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="composition__dropdown-text">Какао бобы</div>
+                                        <div class="composition__dropdown-weight">4 г</div>
+                                    </li>
+                                </ul>
                                 <h3 class="slider__title">Батончик "Гранола Виноград"</h3>
                                 <div class="slider__desc">
                                     <div class="slider__text">
@@ -377,6 +437,7 @@
             </footer>
         </div>
     </div>
+
     <nav class="fixed-menu">
         <ul class="fixed-menu">
             <li class="fixed-menu__item fixed-menu__item--active">
@@ -408,5 +469,31 @@
             </li>
         </ul>
     </nav>
+    <nav class="vert-menu vert-menu--closed vert-menu--open">
+        <ul class="vert-menu__list">
+            <li class="vert-menu__item">
+                <a href="#" class="vert-menu__link">О нас</a>
+            </li>
+            <li class="vert-menu__item">
+                <a href="#" class="vert-menu__link">Батончики</a>
+            </li>
+            <li class="vert-menu__item">
+                <a href="#" class="vert-menu__link">Команда</a>
+            </li>
+            <li class="vert-menu__item">
+                <a href="#" class="vert-menu__link">Меню</a>
+            </li>
+            <li class="vert-menu__item">
+                <a href="#" class="vert-menu__link">Отзывы</a>
+            </li>
+            <li class="vert-menu__item">
+                <a href="#" class="vert-menu__link">Как мы работаем</a>
+            </li>
+            <li class="vert-menu__item">
+                <a href="#" class="vert-menu__link">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+<script src="js/script.js"></script>
 </body>
 </html>
