@@ -3,6 +3,8 @@
 }
 
 .vert-menu--open {
+
+    @include tablets {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -35,6 +37,7 @@
         text-decoration: none;
         font-size: rem(36px);
     }
+}
 }
 
 .vert-menu__list {

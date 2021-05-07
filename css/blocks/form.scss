@@ -68,6 +68,10 @@
         border-color: #DEE2BD;
         outline: none;
     }
+
+    &.input-error {
+        border-color: hotpink;
+    }
 }
 
 .form__controls {

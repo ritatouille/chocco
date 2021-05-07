@@ -33,43 +33,70 @@
     position: absolute;
     display: block;
     top: 50%;
-    width: rem(14px);
-    height: rem(27px);
+    width: rem(30px);
+    height: rem(30px);
+    cursor: pointer;
 
     @include tablets {
         top: 25%;
     }
     
-    &-right {
-        right: 0;
+    &-left {
+        left: 7%;
     }
-
-    
+    &-right {
+        right: 7%;
+    }
 }
 
 .arrow__icon {
     fill: none;
     stroke: #000;
     stroke-width: rem(2px);
-    width: 100%;
-    height: 100%;
+    width: rem(14px);
+    height: rem(27px);
 }
 
-.slider__content {
+.slider__list {
     display: flex;
-    justify-content: space-between;
+    max-width: rem(940px);
+    width: 100%;
+    flex-direction: column;
+}
+
+.slider__item {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
 
     @include tablets {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 100%;
     }
 }
 
-.slider__image {
+.slider__col {
+    display: flex;
+    flex-direction: column;
+
+        &--desc {
+            padding-left: rem(20px);
+        }
+}
+
+.slider__textcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: rem(370px);
+}
+
+.slider__img {
     flex: 1;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: rem(460px);
+    max-height: rem(434px);
 
     @include tablets {
         width: rem(342px);
@@ -77,57 +104,10 @@
     }
 }
 
-.composition__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 100%;
-    width: rem(91px);
-    height: rem(91px);
-    background-color: #86c3d7;
-    border-radius: 4px;
-
-    &:hover {
-        background-color: #60aacc;
-    }
-}
-
-.composition {
-    width: rem(91px);
-    height: rem(91px);
-    margin-bottom: rem(23px);
-
-    &:hover ~ .composition__dropdown {
-        right: rem(30px);
-        opacity: 1;
-    }
-
-    @include tablets {
-        display: none;
-    }
-}
-
-.composition__btn-icon-click {
-    width: rem(91px);
-    height: rem(91px);
-    fill: #fff;
-}
-
-.slider__textcontent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: rem(370px);
-
-    @include tablets {
-        justify-content: center;
-        width: rem(550px);
-    }
-
-    @include phones {
-        width: rem(380px);
-    }
+.slider__image {
+    width: 100%;
+    height: 100%;
+    padding-top: rem(30px);
 }
 
 .slider__title {
@@ -143,22 +123,23 @@
 }
 
 .slider__text {
-    margin-bottom: rem(24px);
-
-    @include tablets {
-        text-align: center;
-    }
+        margin-bottom: rem(24px);
+    
+        @include tablets {
+            text-align: center;
+        }
 }
 
-.slider__list {
+.slider__list-about {
     display: flex;
+    justify-content: left;
 
     @include tablets {
         justify-content: center;
     }
 }
 
-.slider__item {
+.slider__item-about {
     margin-right: rem(44px);
     margin-bottom: rem(24px);
 
@@ -169,6 +150,7 @@
     @include tablets {
         text-align: left;
         margin-bottom: rem(10px);
+        align-items: center;
     }
 }
 
@@ -186,6 +168,7 @@
 
 .slider__order {
     display: flex;
+    justify-content: left;
 
     @include tablets {
         justify-content: center;
@@ -205,6 +188,49 @@
     align-items: center;
 }
 
-.click {
+.composition__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    width: rem(91px);
+    height: rem(91px);
+    background-color: #86c3d7;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #60aacc;
+    }
+}
+
+.composition {
+    position: relative;
+    width: rem(91px);
+    height: rem(91px);
+    margin-bottom: rem(23px);
+
+    &:hover ~ .composition__dropdown {
+        right: rem(95px);
+        opacity: 1;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.composition
+
+.composition__btn-icon-click {
+    width: rem(91px);
+    height: rem(91px);
     fill: #fff;
+}
+
+
+/*slider*/
+
+.slick-initialized .slick-slide {
+    display: flex;
 }
